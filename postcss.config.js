@@ -6,7 +6,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
   whitelist: [
     'body'
   ],
-  defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+  defaultExtractor: content => content.match(/[\w-\/:]+(?<!:)/g) || []
 })
 module.exports = {
   plugins: [
